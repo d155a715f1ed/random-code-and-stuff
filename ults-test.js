@@ -1,3 +1,4 @@
+// Give Lucio Meteor Strike
 const fs = require('fs');
 let ultmap = JSON.parse(fs.readFileSync("./ults.json"));
 
