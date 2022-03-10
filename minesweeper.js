@@ -1,10 +1,13 @@
-const height = 8;
-const width = 8;
-const mineDensity = 0.25;
+var height = process.argv[2] || 8;
+var width = process.argv[3] || 8;
+var mineDensity = process.argv[4] || 0.1;
 
 /* 
-
+    usage: node .\minesweeper.js height width density
+    height and width are integers, density is a float between 0 and 1.
+    defaults set above if not provided.
 */
+
 const BARS = "||";
 const MINE = "💥";
 const numerals = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"];
