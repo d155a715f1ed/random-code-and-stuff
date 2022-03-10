@@ -3,9 +3,13 @@ var width = process.argv[3] || 8;
 var mineDensity = process.argv[4] || 0.1;
 
 /* 
+    minesweeper board generator for copy pasting into discord
     usage: node .\minesweeper.js height width density
     height and width are integers, density is a float between 0 and 1.
     defaults set above if not provided.
+
+    characters may look weird in some terminals; should copy paste fine into Discord. regardless. 
+
 */
 
 const BARS = "||";
