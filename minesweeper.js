@@ -16,12 +16,14 @@ const BARS = "||";
 const MINE = "💥";
 const numerals = ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"];
 const BLANK = "";
+let mineCount = 0;
 let board = [];
 for (let i = 0; i < height; i++) {
   let row = [];
   for (let j = 0; j < width; j++) {
     if (Math.random() <= mineDensity) {
       row.push(MINE);
+      mineCount++;
     } else {
       row.push(BLANK);
     }
@@ -41,6 +43,7 @@ for (let i = 0; i < height; i++) {
   boardDisplay += "\n";
 }
 
+console.log("This board contains " + mineCount + " mines.");
 console.log(boardDisplay);
 
 function countNeighbors(row, col) {
