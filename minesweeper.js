@@ -4,7 +4,7 @@ var mineDensity = process.argv[4] || 0.1;
 
 /* 
     minesweeper board generator for copy pasting into discord
-    usage: node .\minesweeper.js height width density
+    usage: node .\minesweeper.js height width density mineCharacter
     height and width are integers, density is a float between 0 and 1.
     defaults set above if not provided.
 
@@ -13,7 +13,7 @@ var mineDensity = process.argv[4] || 0.1;
 */
 
 const BARS = "||";
-const MINE = "💥";
+const MINE = process.argv[5] || "💥";
 const numerals = ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"];
 const BLANK = "";
 let mineCount = 0;
