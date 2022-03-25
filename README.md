@@ -1,2 +1,5 @@
 # random-nightbot-stuff
-Random data for use in nightbot commands.   No longer in use and may be archived.
+
+Previously: a place for random nightbot scripts.
+Currently: a place for random nonsense.
+TODO: rename repository or make new one.
