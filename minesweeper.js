@@ -13,6 +13,7 @@ var mineDensity = process.argv[4] || 0.1;
 */
 
 const BARS = "||";
+const SPACING = " ";
 const MINE = process.argv[5] || "💥";
 const numerals = ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"];
 const BLANK = "";
@@ -38,7 +39,7 @@ for (let i = 0; i < height; i++) {
     if (char === BLANK) {
       char = countNeighbors(i, j);
     }
-    boardDisplay += BARS + char + BARS + " ";
+    boardDisplay += BARS + char + SPACING + BARS + SPACING;
   }
   boardDisplay += "\n";
 }
